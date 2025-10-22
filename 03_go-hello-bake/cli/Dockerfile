@@ -1,4 +1,5 @@
-FROM golang:1.25.0 AS builder
+ARG GO_VERSION="1.22"
+FROM golang:${GO_VERSION} AS builder
 WORKDIR /app
 COPY src/hello-world.go ./
 RUN CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o /go/bin/hello hello-world.go
