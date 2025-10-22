@@ -6,5 +6,5 @@ LABEL authors="your name"
 
 # note: thare are also native images for curl, hugo, jekyll, llm, ...
 
-ENTRYPOINT sh -c "echo info && top"
+ENTRYPOINT ["top"]
 CMD ["-b"]
