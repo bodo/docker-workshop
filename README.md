@@ -157,7 +157,8 @@ The directory is empty, let's get the content ...
 ```Shell
 # download the source code from Docker's official examples repo
 cd 04_js-todo-compose
-git clone https://github.com/dockersamples/todo-list-app .
+git clone https://github.com/dockersamples/todo-list-app todo
+cd todo
 
 # build & run
 docker compose up -d --build
